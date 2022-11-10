@@ -1,0 +1,60 @@
+﻿void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Шион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps2/06/150601924", 540, TRUE);
+	OutputLine(NULL, "「あれ、どう思います？",
+		   NULL,"\"И что же вы думаете?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601925", 256, TRUE);
+	OutputLine(NULL, "　……私は、…あはは、私がこういうのも変だけど、悟史くんが叔母殺しの犯人だって信じてるですよ。",
+		   NULL," ......Я... аха-ха, наверное, странно мне так говорить, но я считаю, что убил тётку Сатоши-кун.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601926", 256, TRUE);
+	OutputLine(NULL, "あいつは、例えばバァさん辺りに買収されて仕立て上げられた身代わりじゃないかと思うんですけど。」",
+		   NULL, " Того субъекта купила и подсунула полицейским бабка.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Шион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601930", 256, TRUE);
+	OutputLine(NULL, "「…バァさんが裏の世界で相当の力を持ってる、というのは私も知ってはいますけど…。",
+		   NULL, "\"...Я знала, что бабка во всяких тёмных делах ещё та сила,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601931", 256, TRUE);
+	OutputLine(NULL, "そんなにもあったんですね。」",
+		   NULL," но чтоб настолько...\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Шион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601934", 256, TRUE);
+	OutputLine(NULL, "「……ふぅん。",
+		   NULL,"\"......Хммм.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601935", 256, TRUE);
+	OutputLine(NULL, "……身近に居すぎて私がよくわかってなかっただけで。",
+		   NULL," А я и не замечала того, что творилось у меня под носом......", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601936", 256, TRUE);
+	OutputLine(NULL, "………やっぱりバァさんとか御三家とか、旧同盟って大したもんだったんですね。",
+		   NULL, " Нечего сказать, серьёзные вы люди — и бабка, и госанке, и Союз?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601937", 256, TRUE);
+	OutputLine(NULL, "…怖い怖い。」",
+		   NULL," Подумать страшно.\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>Шион</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601951", 256, TRUE);
+	OutputLine(NULL, "「もし居合わせたら。",
+		   NULL,"\"Ну а если б была...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s06/06/150601952", 256, TRUE);
+	OutputLine(NULL, "……悟史くんを許してもらえるよう、バァさんに意見してくれたかな………。」",
+		   NULL, " Ты бы сказала бабке простить его?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
